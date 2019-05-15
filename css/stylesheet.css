@@ -1,3 +1,11 @@
+/* Variables */
+:root {
+  --lambda-red: #bb1333;
+  --lambda-blue: #0c3c78;
+  --lambda-lightblue: #3ab5e5;
+  --lambda-grey: #55596d;
+}
+
 html, body {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -10,25 +18,27 @@ body {
 }
 
 a {
-  color: #0c3c78;
+  color: var(--lambda-blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: #3ab5e5;
+  color: var(--lambda-lightblue);
 }
 
 #masthead {
-  background: #bb1333;
+  background: var(--lambda-red);
   color: white;
-  padding: 30px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#masthead h1 {
+#logo {
   margin: 0;
+  width: 200px;
+  height: 70px;
 }
 
 #masthead a {
@@ -46,6 +56,11 @@ a:hover {
 #content {
   width: 800px;
   margin: 0 auto;
+}
+
+#content p {
+  line-height: 1.4;
+  text-align: justify;
 }
 
 #footer {
