@@ -29,16 +29,16 @@ a:hover {
 #masthead {
   background: var(--lambda-red);
   color: white;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #logo {
-  margin: 0;
-  width: 200px;
-  height: 70px;
+  margin-left: 25px;
+  width: 160px;
+  height: 80px;
 }
 
 #masthead a {
