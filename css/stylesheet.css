@@ -26,10 +26,15 @@ a:hover {
   color: var(--lambda-lightblue);
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 #masthead {
   background: var(--lambda-red);
   color: white;
   padding: 10px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,40 +50,78 @@ a:hover {
   color: #ddd;
   font-size: 1.2rem;
   text-transform: uppercase;
-  margin: 20px;
+  margin-right: 20px;
 }
 
 #masthead a:hover {
-  color: #eee;
-  transition: color .5s ease;
+  color: white;
+  transition: color .4s ease;
+}
+
+#masthead a.cta {
+  background: white;
+  color: var(--lambda-grey);
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
+#hero {
+  background: url("https://picsum.photos/2048/300/?blur&random=1");
+  color: white;
+  text-align: center;
+  height: 300px;
+
+  /* Center content horizontally and vertically */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+#hero h1, #hero h3 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#hero h1 {
+  font-size: 5rem;
+  padding-bottom: 20px;
+}
+
+#hero h3 {
+  font-size: 2.5rem;
 }
 
 #content {
-  width: 800px;
+  width: 960px;
   margin: 0 auto;
 }
 
-#content p {
+#content p, .solutions .copy {
   line-height: 1.4;
   text-align: justify;
 }
 
 #footer {
-  color: #ccc;
+  background: #eee;
+  color: #aaa;
+  padding: 10px;
+}
+
+#footer p {
   font-size: 1.25rem;
   text-align: center;
+
 }
 
-.solutionsFlex{
+.solutions {
   display: flex;
-  border: solid 1px blue;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
-.solutionsFlexitem {
-justify-content: space-between;
-border: solid 1px red;
-}
-
-.margin20{
-margin: 20px;
+.solutions .copy {
+  align-self: center;
+  margin: 20px;
 }
