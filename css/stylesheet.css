@@ -68,3 +68,17 @@ a:hover {
   font-size: 1.25rem;
   text-align: center;
 }
+
+.solutionsFlex{
+  display: flex;
+  border: solid 1px blue;
+}
+
+.solutionsFlexitem {
+justify-content: space-between;
+border: solid 1px red;
+}
+
+.margin20{
+margin: 20px;
+}
