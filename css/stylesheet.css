@@ -9,6 +9,8 @@
 html, body {
   box-sizing: border-box;
   font-size: 62.5%;
+  height: 100%;
+  position: relative;
 }
 
 body {
@@ -28,6 +30,14 @@ a:hover {
 
 h1, h2, h3 {
   margin: 0;
+}
+
+#main {
+  min-height: 100vh;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 50px;
 }
 
 #masthead {
@@ -66,7 +76,7 @@ h1, h2, h3 {
 }
 
 #hero {
-  background: url("https://picsum.photos/2048/300/?blur&random=1");
+  background: url("https://picsum.photos/2048/300/?blur&grayscale&random=1");
   color: white;
   text-align: center;
   height: 300px;
@@ -99,7 +109,7 @@ h1, h2, h3 {
 }
 
 #content p {
-  line-height: 1.4;
+  line-height: 1.6;
   text-align: justify;
 }
 
@@ -107,12 +117,16 @@ h1, h2, h3 {
   background: #eee;
   color: #aaa;
   padding: 10px;
+
+  /* Keep footer at bottom of page no matter the size of the page */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #footer p {
   font-size: 1.25rem;
   text-align: center;
-
 }
 
 .solutions {
@@ -132,7 +146,7 @@ h1, h2, h3 {
   }
 
   #masthead nav {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   #masthead a {
