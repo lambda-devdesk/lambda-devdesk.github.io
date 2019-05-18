@@ -76,10 +76,10 @@ h1, h2, h3 {
 }
 
 #hero {
-  background: url("https://picsum.photos/2048/300/?blur&grayscale&random=1");
+  background: url("https://picsum.photos/2048/400/?blur&grayscale&random=1");
   color: white;
   text-align: center;
-  height: 300px;
+  height: 400px;
 
   /* Center content horizontally and vertically */
   display: flex;
@@ -110,7 +110,7 @@ h1, h2, h3 {
 
 #content p {
   line-height: 1.6;
-  text-align: justify;
+  padding: 10px 0;
 }
 
 #footer {
@@ -136,10 +136,30 @@ h1, h2, h3 {
 }
 
 .solutions .copy {
-  align-self: center;
-  margin: 20px;
+  margin: 15px;
 }
 
+.solutions .copy.solutions.mobile-flip {
+  align-self: center;
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  #content {
+    width: 750px;
+    padding: 20px;
+  }
+
+  #hero {
+    margin: 0;
+  }
+
+  .solutions img {
+
+  }
+}
+
+/* Mobile */
 @media only screen and (max-width: 500px) {
   #logo {
     margin: 0;
@@ -165,14 +185,20 @@ h1, h2, h3 {
   .solutions.mobile-flip {
     flex-direction: column-reverse;
   }
-
-  .solutions img {
-    max-height: 100%;
-    max-width: 100%;
-  }
 }
 
 @media only screen and (max-width: 400px) {
+  #masthead a {
+    margin-right: 10px;
+  }
+
+  /* Get rid of left and right margins on mobile */
+  .solutions .copy {
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
   #masthead a {
     display: block;
     margin-right: 0;
