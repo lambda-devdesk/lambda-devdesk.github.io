@@ -44,10 +44,12 @@ h1, h2, h3 {
   background: var(--lambda-red);
   color: white;
   padding: 10px 40px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 95%;
 }
 
 #logo {
