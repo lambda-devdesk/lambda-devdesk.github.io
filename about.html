@@ -7,92 +7,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="login.js" async></script>
+    <script src="js/login.js" async></script>
   </head>
   <body>
-    <main id="main">
-      <header id="masthead">
+    <header id="masthead">
+      <a href="index.html">
         <img src="img/logo.svg" id="logo" alt="devDesk">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="#">Blog</a>
-          <a href="#" class="cta" class="cta" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
-        </nav>
-      </header>
-      <div id="hero">
-          <h1>About our mission.</h1>
-          <h3>Vestibulum quam urna, pharetra at auctor in.</h3>
-      </div>
-      <div id="content">
-        <article>
-          <h2>Quisque vel laoreet magna</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          aliquam mauris at sagittis laoreet. Aenean vehicula pellentesque
-          purus ut dictum. Sed lacinia vulputate porttitor. In consectetur,
-          ante vel fringilla congue, justo ligula feugiat est, et dignissim
-          sem mauris ac dui. Phasellus in aliquam ante, ut sollicitudin nisi.
-          Aenean erat turpis, sagittis sed aliquam nec, semper id ipsum. Donec
-          blandit, sapien ullamcorper volutpat elementum, quam lorem elementum
-          sapien, at tempor odio dolor sed libero. Quisque nec ex commodo arcu
-          tincidunt vulputate quis rutrum lacus. Morbi non pretium tortor, vitae
-          feugiat mauris. Aenean vehicula pretium tempor.</p>
-          <p>Donec sed lacus urna. Integer est urna, efficitur vitae cursus quis,
-          fermentum eget tortor. Donec mollis mi et imperdiet pharetra. Vivamus
-          aliquet lorem feugiat nisi molestie ultrices. Donec pellentesque ex
-          vel mauris dignissim, ac gravida tortor pulvinar. Aliquam iaculis dictum
-          risus in tempus. Quisque vel laoreet magna, quis tincidunt justo. Morbi
-          fringilla nulla at vulputate tempus. Etiam ultricies est nec mi auctor
-          consequat. Nullam tempus ullamcorper libero ut volutpat. Etiam laoreet
-          a quam sit amet laoreet. Sed diam arcu, ullamcorper sed venenatis vitae,
-          molestie ut dolor. Vivamus lectus arcu, cursus in elit et, pretium
-          pretium tortor.</p>
-        </article>
-        <article>
-          <h2>Quisque vel laoreet magna</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          aliquam mauris at sagittis laoreet. Aenean vehicula pellentesque
-          purus ut dictum. Sed lacinia vulputate porttitor. In consectetur,
-          ante vel fringilla congue, justo ligula feugiat est, et dignissim
-          sem mauris ac dui. Phasellus in aliquam ante, ut sollicitudin nisi.
-          Aenean erat turpis, sagittis sed aliquam nec, semper id ipsum. Donec
-          blandit, sapien ullamcorper volutpat elementum, quam lorem elementum
-          sapien, at tempor odio dolor sed libero. Quisque nec ex commodo arcu
-          tincidunt vulputate quis rutrum lacus. Morbi non pretium tortor, vitae
-          feugiat mauris. Aenean vehicula pretium tempor.</p>
-        </article>
-      </div>
-      <!-- login box -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
-
-  <!-- login content -->
-  <form class="modal-content animate" action="/action_page.php">
-    
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Lambda Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Lambda Password" name="psw" required>
-
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-      <footer id="footer">
-        <p>&copy; 2019 devDesk, LLC.</p>
-      </footer>
-    </main>
+      </a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="#">Blog</a>
+        <a href="#" class="cta" class="cta">Sign in</a>
+      </nav>
+    </header>
+    <section class="hero">
+        <h1>About our mission.</h1>
+        <h3>Vestibulum quam urna, pharetra at auctor in.</h3>
+    </section>
+    <section class="content">
+      <article>
+        <h2>Quisque vel laoreet magna</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+        aliquam mauris at sagittis laoreet. Aenean vehicula pellentesque
+        purus ut dictum. Sed lacinia vulputate porttitor. In consectetur,
+        ante vel fringilla congue, justo ligula feugiat est, et dignissim
+        sem mauris ac dui. Phasellus in aliquam ante, ut sollicitudin nisi.
+        Aenean erat turpis, sagittis sed aliquam nec, semper id ipsum. Donec
+        blandit, sapien ullamcorper volutpat elementum, quam lorem elementum
+        sapien, at tempor odio dolor sed libero. Quisque nec ex commodo arcu
+        tincidunt vulputate quis rutrum lacus. Morbi non pretium tortor, vitae
+        feugiat mauris. Aenean vehicula pretium tempor.</p>
+        <p>Donec sed lacus urna. Integer est urna, efficitur vitae cursus quis,
+        fermentum eget tortor. Donec mollis mi et imperdiet pharetra. Vivamus
+        aliquet lorem feugiat nisi molestie ultrices. Donec pellentesque ex
+        vel mauris dignissim, ac gravida tortor pulvinar. Aliquam iaculis dictum
+        risus in tempus. Quisque vel laoreet magna, quis tincidunt justo. Morbi
+        fringilla nulla at vulputate tempus. Etiam ultricies est nec mi auctor
+        consequat. Nullam tempus ullamcorper libero ut volutpat. Etiam laoreet
+        a quam sit amet laoreet. Sed diam arcu, ullamcorper sed venenatis vitae,
+        molestie ut dolor. Vivamus lectus arcu, cursus in elit et, pretium
+        pretium tortor.</p>
+      </article>
+      <article>
+        <h2>Quisque vel laoreet magna</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+        aliquam mauris at sagittis laoreet. Aenean vehicula pellentesque
+        purus ut dictum. Sed lacinia vulputate porttitor. In consectetur,
+        ante vel fringilla congue, justo ligula feugiat est, et dignissim
+        sem mauris ac dui. Phasellus in aliquam ante, ut sollicitudin nisi.
+        Aenean erat turpis, sagittis sed aliquam nec, semper id ipsum. Donec
+        blandit, sapien ullamcorper volutpat elementum, quam lorem elementum
+        sapien, at tempor odio dolor sed libero. Quisque nec ex commodo arcu
+        tincidunt vulputate quis rutrum lacus. Morbi non pretium tortor, vitae
+        feugiat mauris. Aenean vehicula pretium tempor.</p>
+      </article>
+    </section>
+    <footer id="footer">
+      <p>&copy; 2019 devDesk, LLC.</p>
+    </footer>
   </body>
 </html>

@@ -7,48 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="login.js" async></script>
+    <script src="js/login.js" async></script>
   </head>
   <body>
-    <main id="main">
-      <header id="masthead">
+    <header id="masthead">
+      <a href="index.html">
         <img src="img/logo.svg" id="logo" alt="devDesk">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="#">Blog</a>
-          <a href="#" class="cta" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
-        </nav>
-      </header>
-      <div id="hero">
-          <h1>We know tickets.</h1>
-          <h3>Vestibulum quam urna, pharetra at auctor in.</h3>
-      </div>
-      <div id="content">
-        <article class="solutions">
-            <img src="https://picsum.photos/300/200?random=1" alt="Placeholder image">
-            <section class="copy">
-              <h2>Modern solutions for modern problems</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-              ligula non quam tincidunt rhoncus in quis mauris. Duis pharetra, lectus
-              et maximus posuere, ligula mauris malesuada lorem, at volutpat est enim
-              vel urna. Etiam non rutrum dolor, nec vulputate sem. Nam ut ex sit
-              amet mauris tincidunt pulvinar sed nec est</p>
-            </section>
-          </article>
-        <article class="solutions mobile-flip">
-          <section class="copy">
-            <h2>Modern solutions for modern problems</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-            ligula non quam tincidunt rhoncus in quis mauris. Duis pharetra, lectus
-            et maximus posuere, ligula mauris malesuada lorem, at volutpat est enim
-            vel urna. Etiam non rutrum dolor, nec vulputate sem. Nam ut ex sit
-            amet mauris tincidunt pulvinar sed nec est</p>
-          </section>
-          <img src="https://picsum.photos/300/200?random=2" alt="Placeholder image">
-        </article>
-        <article class="solutions">
-          <img src="https://picsum.photos/300/200?random=3" alt="Placeholder image">
+      </a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="#">Blog</a>
+        <a href="#" class="cta">Sign in</a>
+      </nav>
+    </header>
+    <section class="hero">
+        <h1>We know tickets.</h1>
+        <h3>Vestibulum quam urna, pharetra at auctor in.</h3>
+    </section>
+    <section class="content">
+      <article class="solutions">
+          <img src="https://picsum.photos/300/200?random=1" alt="Placeholder image">
           <section class="copy">
             <h2>Modern solutions for modern problems</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
@@ -58,38 +36,52 @@
             amet mauris tincidunt pulvinar sed nec est</p>
           </section>
         </article>
-      </div>
-<!-- login box -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
+      <article class="solutions flip">
+        <section class="copy">
+          <h2>Modern solutions for modern problems</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+          ligula non quam tincidunt rhoncus in quis mauris. Duis pharetra, lectus
+          et maximus posuere, ligula mauris malesuada lorem, at volutpat est enim
+          vel urna. Etiam non rutrum dolor, nec vulputate sem. Nam ut ex sit
+          amet mauris tincidunt pulvinar sed nec est</p>
+        </section>
+        <img src="https://picsum.photos/300/200?random=2" alt="Placeholder image">
+      </article>
+      <article class="solutions">
+        <img src="https://picsum.photos/300/200?random=3" alt="Placeholder image">
+        <section class="copy">
+          <h2>Modern solutions for modern problems</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+          ligula non quam tincidunt rhoncus in quis mauris. Duis pharetra, lectus
+          et maximus posuere, ligula mauris malesuada lorem, at volutpat est enim
+          vel urna. Etiam non rutrum dolor, nec vulputate sem. Nam ut ex sit
+          amet mauris tincidunt pulvinar sed nec est</p>
+        </section>
+      </article>
+    </section>
+    <footer id="footer">
+      <p>&copy; 2019 devDesk, LLC.</p>
+    </footer>
+    <!-- login box -->
+    <div class="modal">
+      <!-- login content -->
+      <form class="modal-content" action="#">
+        <header class="modal-header">
+          <h3>Sign in or register</h3>
+          <div class="close-button" title="Close Modal">&times;</div>
+        </header>
+        <div class="form-container">
+          <input type="text" placeholder="Username" name="username" required>
+          <input type="password" placeholder="Password" name="password" required>
 
-  <!-- login content -->
-  <form class="modal-content animate" action="/action_page.php">
-    
+          <p>
+            <input type="checkbox" checked="checked" id="remember-checkbox" name="remember">
+            <label for="remember-checkbox">Remember Me</label>
+          </p>
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Lambda Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Lambda Password" name="psw" required>
-
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+          <button type="submit">Login</button>
+        </div>
+      </form>
     </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-      <footer id="footer">
-        <p>&copy; 2019 devDesk, LLC.</p>
-      </footer>
-    </main>
   </body>
 </html>
