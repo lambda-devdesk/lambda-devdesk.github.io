@@ -20,10 +20,10 @@
         <a href="#" class="cta">Sign in</a>
       </nav>
     </header>
-    <section class="hero">
+    <header class="hero">
         <h1>We know tickets.</h1>
         <h3>Vestibulum quam urna, pharetra at auctor in.</h3>
-    </section>
+    </header>
     <section class="content">
       <article class="solutions">
           <img src="https://picsum.photos/300/200?random=1" alt="Placeholder image">
@@ -64,23 +64,25 @@
     </footer>
     <!-- login box -->
     <div class="modal">
-      <!-- login content -->
       <form class="modal-content" action="#">
         <header class="modal-header">
           <h3>Sign in or register</h3>
           <div class="close-button" title="Close Modal">&times;</div>
         </header>
-        <div class="form-container">
+        <section class="form-container">
           <input type="text" placeholder="Username" name="username" required>
+          <input type="text" placeholder="Email address" name="email" class="hidden">
           <input type="password" placeholder="Password" name="password" required>
+          <input type="password" placeholder="Confirm password" class="hidden" name="password2">
 
-          <p>
-            <input type="checkbox" checked="checked" id="remember-checkbox" name="remember">
-            <label for="remember-checkbox">Remember Me</label>
-          </p>
+          <input type="checkbox" checked="checked" id="remember-checkbox" name="remember">
+          <label for="remember-checkbox">Remember Me</label>
+          <br>
 
           <button type="submit">Login</button>
-        </div>
+
+          <p><a href="#" class="register-button">Don't have an account?</a></p>
+        </section>
       </form>
     </div>
   </body>
