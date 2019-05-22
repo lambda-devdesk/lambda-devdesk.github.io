@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/login.js" async></script>
+    <script src="js/tabs.js" async></script>
   </head>
   <body>
     <header id="masthead">
@@ -17,7 +18,7 @@
       <nav>
         <a href="about.html">About</a>
         <a href="#">Blog</a>
-        <a href="#" class="cta">Sign in</a>
+        <a href="#!" class="cta">Sign in</a>
       </nav>
     </header>
     <header class="hero">
@@ -59,6 +60,42 @@
         </section>
       </article>
     </section>
+    <header class="hero second">
+      <h1>Testimonals from our users</h1>
+      <h3>Don't just take it from us, these people live devDesk.</h3>
+    </header>
+    <section class="content">
+      <nav class="tab-links">
+        <a href="#!" class="link-selected" data-tab="1">Bradley Taylor</a>
+        <a href="#!" data-tab="2">Laura Eckley</a>
+        <a href="#!" data-tab="3">Ryan Schneider</a>
+      </nav>
+      <div class="tab-content">
+        <div class="tab item-selected" data-tab="1">
+          <img src="img/testimonal01.jpg" alt="Bradley Taylor">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+          ligula non quam tincidunt rhoncus in quis mauris. Duis pharetra, lectus
+          et maximus posuere, ligula mauris malesuada lorem, at volutpat est enim
+          vel urna. Etiam non rutrum dolor, nec vulputate sem. Nam ut ex sit
+          amet mauris tincidunt pulvinar sed nec est</p>
+        </div>
+        <div class="tab" data-tab="2">
+          <img src="img/testimonal02.jpg" alt="Laura Eckley">
+          <p>Donec suscipit mi vehicula fermentum aliquet. Interdum et malesuada
+            fames ac ante ipsum primis in faucibus. Aenean facilisis eget nisi
+            ullamcorper ultricies. Nunc suscipit, lacus vel faucibus vehicula,
+            nunc nisi viverra tortor, non varius risus nunc sed est. Vivamus nec
+            nisi pellentesque, hendrerit mauris ut, pharetra risus.</p>
+        </div>
+        <div class="tab" data-tab="3">
+          <img src="img/testimonal03.jpg" alt="Ryan Schneider">
+          <p>Aliquam finibus tortor vel lorem tincidunt auctor. Curabitur
+            convallis elementum aliquam. Curabitur pharetra pharetra lobortis.
+            Ut fringilla orci id placerat facilisis. Nam libero neque, tempus
+            id facilisis ut, convallis eu sem.</p>
+        </div>
+      </div>
+    </section>
     <footer id="footer">
       <p>&copy; 2019 devDesk, LLC.</p>
     </footer>
@@ -80,7 +117,6 @@
           <br>
 
           <button type="submit">Login</button>
-
           <p><a href="#" class="register-button">Don't have an account?</a></p>
         </section>
       </form>
