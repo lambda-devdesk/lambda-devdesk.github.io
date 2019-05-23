@@ -77,7 +77,7 @@ h1, h2, h3 {
 }
 
 .hero {
-  background: center / cover url("/img/hero01.jpg");
+  background: center / cover url("img/hero01.jpg");
   color: white;
   text-align: center;
   height: 400px;
@@ -92,11 +92,11 @@ h1, h2, h3 {
 }
 
 .hero.second {
-  background-image: url("/img/hero02.jpg")
+  background-image: url("img/hero02.jpg")
 }
 
 .hero.third {
-  background-image: url("/img/hero03.jpg");
+  background-image: url("img/hero03.jpg");
 }
 
 .hero h1, .hero h3 {
