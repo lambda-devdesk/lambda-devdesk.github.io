@@ -1,46 +1,47 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>devDesk</title>
+    <title>About Us | devDesk</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="js/login.js" async></script>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <script src="/js/login.js" async></script>
   </head>
   <body>
     <header id="masthead">
-      <a href="index.html">
-        <img src="img/logo.svg" id="logo" alt="devDesk">
+      <a href="/index.html">
+        <img src="/img/logo.svg" id="logo" alt="devDesk">
       </a>
-      <nav>
-        <a href="about.html">About</a>
+      <nav id="navigation">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
         <a href="#">Blog</a>
         <a href="#" class="cta" class="cta">Sign in</a>
       </nav>
     </header>
-    <section class="hero">
+    <header class="hero third">
         <h1>About our mission.</h1>
         <h3>Ticket solutions redefined!</h3>
-    </section>
+    </header>
     <section class="content">
       <article>
         <h2>A dream coded from nightmares!</h2>
         <p>The designers of devDesk have worked with countless ticketing programs
-        before even hearing of Lambda School. Late nights at previous jobs
+        before even before attending Lambda School. Late nights at previous jobs
         fighting with these programs and problems gave us a clear path, a
         streamlined system designed to work with you rather than against you.</p>
         <p>Our team started devDesk in the early summer days of 2019. With a
         small team of Lambda hardened coders, we pushed through each wall in
-        front of us and made something we can be proud of, something truly
+        front of us and made something to be proud of, something truly
         special, and we think you will think so too.</p>
       </article>
       <article>
         <h2>By Lambda students, for Lambda students!</h2>
-        <p>The best part of devDesk to us is the love that goes into the lines
-        of code. Every line has been written by someone that walked the same
-        path as those that will use it. We all share in the experence of
+        <p>The best part of devDesk is the love that goes into the lines
+        of code. Every line has been written by someone that has walked the same
+        path as those that will use it. We all share in the experience of
         Lambda School, making it simple to spot the pitfalls and fill them
         up with features that counter every issue we personally encountered
         in our time at Lambda. When you are using devDesk, you are standing
@@ -50,5 +51,27 @@
     <footer id="footer">
       <p>&copy; 2019 devDesk, LLC.</p>
     </footer>
+    <!-- login box -->
+    <div class="modal">
+      <form class="modal-content" action="#">
+        <header class="modal-header">
+          <h3>Sign in or register</h3>
+          <div class="close-button" title="Close Modal">&times;</div>
+        </header>
+        <section class="form-container">
+          <input type="text" placeholder="Username" name="username" required>
+          <input type="text" placeholder="Email address" name="email" class="hidden">
+          <input type="password" placeholder="Password" name="password" required>
+          <input type="password" placeholder="Confirm password" class="hidden" name="password2">
+
+          <input type="checkbox" checked="checked" id="remember-checkbox" name="remember">
+          <label for="remember-checkbox">Remember Me</label>
+          <br>
+
+          <button type="submit">Login</button>
+          <p><a href="#!" class="register-button">Don't have an account?</a></p>
+        </section>
+      </form>
+      </div>
   </body>
 </html>
