@@ -161,6 +161,7 @@ h1, h2, h3 {
 
 .tab-links .link-selected {
   color: var(--lambda-red);
+  transition: color .2s ease-in;
 }
 
 .tab {
@@ -169,8 +170,11 @@ h1, h2, h3 {
 
 .tab.item-selected {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+
+.tab img, .tab p {
+  margin: var(--large-space);
 }
 
 .tab img {
@@ -180,8 +184,9 @@ h1, h2, h3 {
 }
 
 .tab p {
-  font-size: 2rem;
-  margin: var(--xlarge-space);
+  color: var(--lambda-grey);
+  font-size: 1.8rem;
+  align-self: center;
 }
 
 #footer {
