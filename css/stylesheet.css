@@ -100,7 +100,7 @@ h1, h2, h3 {
 }
 
 .hero h1, .hero h3 {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
 }
 
 .hero h1 {
@@ -113,7 +113,6 @@ h1, h2, h3 {
 }
 
 .content {
-  width: 75%;
   margin: var(--xlarge-space) auto;
 }
 
@@ -132,11 +131,7 @@ h1, h2, h3 {
   margin: var(--medium-space);
 }
 
-.solutions img {
-  object-fit: cover;
-}
-
-.solutions .copy {
+.solutions img, .solutions .copy {
   padding: var(--medium-space) var(--large-space);
 }
 
@@ -285,15 +280,22 @@ h1, h2, h3 {
 }
 
 /* Responsive Breakpoints */
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .content {
+    width: 65%;
+  }
+}
+
 /* Tablet */
 @media only screen and (max-width: 768px) {
-  #content {
-    padding: var(--large-space);
+  .content {
+    margin: var(--large-space);
   }
 }
 
 /* Mobile */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   /* Make masthead static on mobile */
   #masthead {
     position: static;
@@ -321,7 +323,7 @@ h1, h2, h3 {
     flex-direction: column-reverse;
   }
 
-  .hero h1, .herot h3 {
+  .hero h1, .hero h3 {
     padding: var(--small-space);
   }
 
@@ -351,5 +353,11 @@ h1, h2, h3 {
   #navigation a {
     display: block;
     margin-right: 0;
+  }
+
+  .solutions img {
+    object-fit: contain;
+    width: 250px;
+    height: 150px;
   }
 }
